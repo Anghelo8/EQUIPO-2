@@ -34,7 +34,7 @@ networks: db-network: Definimos una red personalizada llamada db-network para qu
 Una vez que tengas el archivo docker-compose.yml listo, abre una terminal en el directorio donde se encuentra el archivo.
 Para levantar el contenedor, ejecuta el siguiente comando:
 
-```
+```bash
 docker-compose up -d
 ```
 -d: Ejecuta los contenedores en segundo plano (detached mode).
@@ -44,7 +44,7 @@ Este comando descargará la imagen de SQL Server (si no la tienes) y levantará 
 
 3. Verificar que el contenedor está corriendo
 Para asegurarte de que el contenedor está en funcionamiento, ejecuta el siguiente comando:
-```
+```bash
 docker ps
 ```
 Este comando te mostrará los contenedores en ejecución. Deberías ver algo como esto:
