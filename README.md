@@ -33,8 +33,10 @@ networks: db-network: Definimos una red personalizada llamada db-network para qu
 2. Levantar el contenedor usando Docker Compose
 Una vez que tengas el archivo docker-compose.yml listo, abre una terminal en el directorio donde se encuentra el archivo.
 Para levantar el contenedor, ejecuta el siguiente comando:
-docker-compose up -d
 
+```
+docker-compose up -d
+```
 -d: Ejecuta los contenedores en segundo plano (detached mode).
 
 
