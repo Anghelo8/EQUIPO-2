@@ -44,8 +44,9 @@ Este comando descargará la imagen de SQL Server (si no la tienes) y levantará 
 
 3. Verificar que el contenedor está corriendo
 Para asegurarte de que el contenedor está en funcionamiento, ejecuta el siguiente comando:
+```
 docker ps
-
+```
 Este comando te mostrará los contenedores en ejecución. Deberías ver algo como esto:
 
 <img width="757" height="108" alt="image" src="https://github.com/user-attachments/assets/bce0bec8-7cea-4c7d-9b89-fea1bc90fa36" />
