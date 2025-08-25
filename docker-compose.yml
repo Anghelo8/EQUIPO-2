@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Express  # Usa la edición de SQL Server Express
+      - MSSQL_SA_PASSWORD=YourPassword123  # Cambia esta contraseña por algo más seguro
+    ports:
+      - "1433:1433"  # El puerto de SQL Server (puerto predeterminado)
+    volumes:
+      - sql-data:/var/opt/mssql  # Volumen para persistencia de datos
+    networks:
+      - db-network
+
+volumes:
+  sql-data:
+
+networks:
+  db-network:
+    driver: bridge
